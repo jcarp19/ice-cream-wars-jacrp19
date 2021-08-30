@@ -1,0 +1,26 @@
+.Votes {
+    padding: 1em;
+}
+.hidden {
+    display: none;
+}
+.not-hidden {
+    display: block;
+}
+.chocolateBar .progress-bar {
+    background-color: #4f2c2c;
+}
+.strawberryBar .progress-bar {
+    background-color: #de8c91;
+}
+.vanillaBar .progress-bar {
+    background-color: #cbc0ac;
+}
+@media only screen and (min-width: 600px) {
+    .Votes {
+        padding-top: 0;
+    }
+    .Votes > h2 {
+        margin-top: 0 !important;
+    }
+}

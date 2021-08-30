@@ -1,0 +1,31 @@
+.AdDesigner {
+    padding: 0 1em;
+}
+.light {
+    border: 1px solid #222;
+}
+.dark {
+    background-color: #222;
+    color: #fff;
+    border: 1px solid #222;
+}
+Button {
+    background-color: #0e3c7e !important;
+    color: #fff !important;
+    border: none !important;
+    margin-right: .5em;
+}
+Button:active {
+    background-color: #1e60a9 !important;
+    color: #fff !important;
+    border: none !important;
+}
+Button:disabled {
+    background-color: gray !important;
+    color: #fff !important;
+    border: none !important;
+}
+.fontSize {
+    font-family: monospace;
+    margin-right: .5em;
+}
