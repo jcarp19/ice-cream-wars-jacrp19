@@ -3,7 +3,11 @@ header {
     text-align: center;
     color: #0e3c7e;
     font-family: 'Caveat';
-    padding: 1em 0;
+    padding: 1em 2em;
     margin-bottom: 2em;
     box-shadow: 0 3px 5px #222;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
 }

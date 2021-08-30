@@ -1,9 +1,12 @@
 import "./Header.css";
-
-const Header = () => {
+interface Prop {
+    user: string;
+}
+const Header = (props: Prop) => {
     return (
         <header>
             <h1>Ice Cream Wars</h1>
+            <h4>Welcome {props.user}</h4>
         </header>
     )
 };

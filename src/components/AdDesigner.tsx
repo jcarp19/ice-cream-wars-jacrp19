@@ -2,20 +2,23 @@ import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import {useState} from "react";
 import "./AdDesigner.css";
+import Ad from "./Ad";
 
 const AdDesigner = () => {
     const [ad, setAd] = useState("Chocolate");
     const [theme, setTheme] = useState("Light");
     const [font, setFont] = useState(16);
 
+    let styles = { width: '100%', textAlign: "center" };
     return (
         <div className="AdDesigner">
-            <Card style={{ width: '100%', textAlign: "center" }}>
+            {/* <Card style={{ width: '100%', textAlign: "center" }}>
                 <Card.Body className={theme == "Light" ? "light" : "dark"}>
                     <Card.Title>Vote For</Card.Title>
                     <Card.Subtitle className="mb-2" style={{fontSize: `${font}px`, fontFamily: 'Caveat' }}>{ad}</Card.Subtitle>
                 </Card.Body>
-            </Card>
+            </Card> */}
+            <Ad flavor={ad} fontSize={font} darkTheme={theme === "Dark"} />
 
             <h2>What to Support</h2>
             <Button disabled={ad === "Chocolate"} onClick={() => {setAd("Chocolate")}}>Chocolate</Button>
